@@ -1,0 +1,2 @@
+# Ignores VSCode compiled files from the Workshop extension
+src/target/
