@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+
+\usepackage[spanish]{babel} % Remove this line if you want English language support
+\usepackage[hyperindex]{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\addto\captionsspanish{\renewcommand{\contentsname}{Tabla de Contenidos}}
+
+\begin{document}
+
+\title{\textbf{Título del Informe} \\ \large \textbf{Subtítulo del Informe}}
+\author{Doe, John}
+\date{\today}
+
+\maketitle % Prints the title, author, and date
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../assets/latex.png}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+\section{Introducción}
+
+\subfile{introduction.tex}
+
+\section{Desarrollo}
+\index{Desarrollo}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Sed eu augue ut nunc semper lacinia id in enim. Sed bibendum 
+molestie dignissim. Aenean quis odio id leo gravida sodales. 
+Nam id turpis nunc. Aliquam imperdiet quam maximus nisl 
+iaculis maximus. Vestibulum gravida egestas sapien, ac posuere 
+metus sagittis quis. Aliquam quis turpis non ex placerat iaculis. 
+Nunc quis nisl eu ipsum ullamcorper feugiat. Sed eu faucibus metus, 
+quis ultricies erat. Donec vel commodo eros. Donec pretium sed 
+ligula et placerat. In hac habitasse platea dictumst. 
+Aenean ultricies vulputate dignissim. Maecenas et leo eleifend 
+libero efficitur condimentum id eu quam. Mauris sit amet pretium felis.
+
+\section{Desarrollo}
+
+\subsection{Supuestos}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+\subsection{Extra}
+
+Sed eu augue ut nunc semper lacinia id in enim. Sed bibendum 
+
+\section{Conclusión}
+
+\end{document}
