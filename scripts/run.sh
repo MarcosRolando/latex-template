@@ -1,7 +1,6 @@
 #!/bin/bash
 
 function sigterm_handler {
-    echo "hola"
     exit 0
 }
 
