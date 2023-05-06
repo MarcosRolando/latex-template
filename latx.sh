@@ -18,11 +18,15 @@ function compile {
 }
 
 function help {
-    echo "Usage: ./script.sh [build|compile]"
+    echo "Usage: ./latx.sh COMMAND [OPTIONS]"
     echo ""
-    echo "build: build docker image for compiling latex project"
-    echo "compile: compile latex project"
-    echo "help: show this help"
+    echo "Commands:"
+    echo "  build: build docker image for compiling latex project"
+    echo "  compile: compile latex project"
+    echo "  help: show this help"
+    echo ""
+    echo "Options:"
+    echo "  compile -> --watch: watch for changes in the project and compile automatically"
 }
 
 if [ $# -eq 0 ]; then
