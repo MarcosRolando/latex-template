@@ -3,6 +3,7 @@
 ## Dependencies
 
 - Docker
+- jq
 
 ## How to use
 
